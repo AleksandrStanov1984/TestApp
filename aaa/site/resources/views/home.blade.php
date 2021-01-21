@@ -26,7 +26,7 @@
             <label for="inputPassword">Пароль</label>
             <input type="password" class="form-control" id="inputPassword" name="inputPassword" placeholder="Введите пароль">
         </div>
-        <button type="submit" class="btn btn btn-success" style="background-color: #399191">
+        <button type="submit" class="btn btn btn-success" style="background-color: #e0c45c">
             Войти
         </button>
     </form>
@@ -34,6 +34,6 @@
 
 @endsection
 
-@section('footer_content')
+{{--@section('footer_content')--}}
 
-@endsection
+{{--@endsection--}}

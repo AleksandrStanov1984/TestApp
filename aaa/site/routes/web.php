@@ -17,6 +17,11 @@ Route::get('/home', 'App\Http\Controllers\MainController@home');
 
 Route::get('/about_product', 'App\Http\Controllers\MainController@about');
 
+Route::get('/company', 'App\Http\Controllers\MainController@company');
+Route::post('/company/add', 'App\Http\Controllers\MainController@add_company');
+Route::post('/company/del/id', 'App\Http\Controllers\MainController@delete_company');
+Route::post('/company/change/id', 'App\Http\Controllers\MainController@change_company');
+
 Route::get('/product', 'App\Http\Controllers\MainController@review')->name('product');
 Route::post('/product/check', 'App\Http\Controllers\MainController@access_user');
 
