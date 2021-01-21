@@ -74,8 +74,8 @@ class MainController extends Controller
 
         $company = new ContactDB();
         $company->name = $request->input('name');
-        $company->adres = $request->input('name');
-        $company->cuntry = $request->input('name');
+        $company->adres = $request->input('adres');
+        $company->cuntry = $request->input('cuntry');
         $company->created_at = date("Y-m-d H:i");
 
         $company->save();
